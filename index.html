@@ -9,11 +9,94 @@
     </head>
     <body>
         <div id="header">
-            <div id="container">
+            <div class="container">
+                <nav>
+                    <img src="logobg.jpg" class="logo" width="200px" height="100px">
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Web Development</p>
+                    <h1>Hi,I'm <span>balaji</span> from india</h1>
+                </div>
                 
             </div>
 
         </div>
+        <!-- -----about----- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <img src="about.jpeg" >
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="sub-title">About me!</h1>
+                        <p>Hi, I'm Balaji! I'm a 19-year-old .I live in Coimbatore , and have always been interested in Full Stack . After completing my education at Suguna Rip V School, I'm pursuing  a degree in Sri Eshwar College Of Engineering.
+                            I always looking for new ways to challenge myself and grow as a person. I also love spending time with my Friends, and cherish the relationships I have with the people in my life
+                            I'm excited to share my experiences and knowledge with others through this web page.</p>
+
+                            <div class="tab-titles">
+                               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                               <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                               <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front End</span><br>Desinging web interfaces</li>
+                                    <li><span>Coding</span><br>Basic coding knowledge in c,python java</li>
+                                    <li><span>MDBMS</span><br>basic knowledgein mysql</li>
+                                    <li><span>DSA</span><br>Basic level</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experince">
+                                <ul>
+                                    <li><span>Fresh</span><br>I have no Experince i'm styuding in 2nd year in b.tech</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2019</span><br>Complleted my 10th grade in suguna rip v school</li>
+                                    <li><span>2021</span><br>Complleted my 12th grade in suguna rip v school</li>
+                                    <li><span>2021-2025</span><br>styudingmy b.tech in sri eshwar college of Engineering</li>
+                                    
+                                </ul>
+                            </div>
+                            
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontant.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById("tabname").classList.add("active-tab");
+}
+    
+
+   
+</script>
+
     </body>
 
 </html>
