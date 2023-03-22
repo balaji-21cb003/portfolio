@@ -6,6 +6,7 @@
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfoio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c2180e9bfc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -14,6 +15,7 @@
                     <img src="logobg.jpg" class="logo" width="200px" height="100px">
 
                     <ul>
+                        
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
@@ -75,6 +77,80 @@
                 </div>
             </div>
         </div>
+        <!-- services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                  <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <br>
+                        <p>A web designer works on the appearance, layout, and, in some cases, content of a website. 
+                            Appearance, for instance, relates to the colors, font, and images used.Layout refers to how 
+                            information is structured and categorized. A good web design is easy to use, aesthetically pleasing, 
+                            and suits the user group and brand of the website. </p>
+                            <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h2>Sample 1</h2>
+                        <br>
+                        <p>A web designer works on the appearance, layout, and, in some cases, content of a website. 
+                            Appearance, for instance, relates to the colors, font, and images used.Layout refers to how 
+                            information is structured and categorized. A good web design is easy to use, aesthetically pleasing, 
+                            and suits the user group and brand of the website. </p>
+                            <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h2>Sample 2</h2>
+                        <br>
+                        <p>A web designer works on the appearance, layout, and, in some cases, content of a website. 
+                            Appearance, for instance, relates to the colors, font, and images used.Layout refers to how 
+                            information is structured and categorized. A good web design is easy to use, aesthetically pleasing, 
+                            and suits the user group and brand of the website. </p>
+                            <a href="#">learn more</a>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+<!--    --------portfolio--------- -->
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg" width="500" height="500">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>social media is a collective term for websites and 
+                        applications that focus on communication, community-based input, interaction, content-sharing</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpg" width="500" height="500">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>social media is a collective term for websites and 
+                        applications that focus on communication, community-based input, interaction, content-sharing</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work"> 
+                <img src="work3.jpg" width="500" height="500">
+                <div class="layer">
+                    <h3>Online shooping App</h3>
+                    <p>social media is a collective term for websites and 
+                        applications that focus on communication, community-based input, interaction, content-sharing</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 
@@ -87,10 +163,10 @@
             tablink.classList.remove("active-link");
         }
         for(tabcontent of tabcontents){
-            tabcontant.classList.remove("active-tab");
+            tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
-    document.getElementById("tabname").classList.add("active-tab");
+    document.getElementById(tabname).classList.add("active-tab");
 }
     
 
