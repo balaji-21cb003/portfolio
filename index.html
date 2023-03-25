@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/c2180e9bfc.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+       <body>
         <div id="header">
             <div class="container">
                 <nav>
@@ -21,7 +21,10 @@
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
+                        <i class="fas" class="fa-sharp fa-solid fa-xmark"></i>
+                        
                     </ul>
+                    <i class="fas" class="fa-solid fa-bars"></i>
                 </nav>
                 <div class="header-text">
                     <p>Web Development</p>
@@ -31,7 +34,7 @@
             </div>
 
         </div>
-        <!-- -----about----- -->
+        <!-- -----about----- --> 
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -149,6 +152,38 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ----------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> contact@emample.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="cv.pdf"  download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-rigth">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-heart"></i> copyright @ balaji.Made with xyz</p>
     </div>
 </div>
 
@@ -168,7 +203,7 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
-    
+
 
    
 </script>
